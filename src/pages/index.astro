@@ -4,6 +4,7 @@ import Button from '../components/Button.astro';
 import Card from '../components/Card.astro';
 import Subscribe from '../components/Subscribe.astro';
 import logo from '../../public/logo.svg?raw';
+import socialBlueSky from '../../public/social-blue-sky.svg?raw';
 import socialX from '../../public/social-x.svg?raw';
 import socialDiscord from '../../public/social-discord.svg?raw';
 import socialLinkedIn from '../../public/social-linkedin.svg?raw';
@@ -18,7 +19,7 @@ const discordLink = 'https://discord.gg/Abkm7Ewhen';
 			<div class="logo">
 				<Fragment set:html={logo}></Fragment>
 			</div>
-			<p class="presenting">PRESENTING CARDINALITY</p>
+			<p class="presenting">PRESENTING CARDINAL</p>
 			<h1>Start observing your Flutter apps</h1>
 			<p class="tagline">Subscribe to our waitlist to receive product updates and announcements</p>
 			<Subscribe></Subscribe>
@@ -27,25 +28,31 @@ const discordLink = 'https://discord.gg/Abkm7Ewhen';
 	</header>
 	<main>
 		<div class="content">
-			<h3>Cardinality is an app insights platform.</h3>
+			<h3>Cardinal is an app insights platform.</h3>
             <p>
-                Cardinality is a platform that offers a wide array of tools to enhance 
+                Cardinal is a platform that offers a wide array of tools to enhance 
                 insights into your product. Understanding how users interact with your product isn't 
                 easy.
-                Cardinality can assist you in gathering and navigating app data so that you can focus 
+                Cardinal can assist you in gathering and navigating app data so that you can focus 
                 on what's important: your users.
             </p>
             <h3>Features</h3>
             <ul class="feature-list">
-                <Card title="Easily add to existing applications" description="The Cardinality SDK can be integrated into any Flutter or Dart application."></Card>
-                <Card title="Full insights into your data" description="With the Cardinality web app you can see all your user sessions and analytic data in one place."></Card>
-                <Card title="Integrated querying language" description="Create and customize your own dashboards in the web app with the Cardinality Query Language (CQL)"></Card>
-                <Card title="Secret feature" description="We are still cooking this secret Cardinality feature but it will elevate the insights into your application to the next level."></Card>
+                <Card title="Easily add to existing applications" description="The Cardinal SDK can be integrated into any Flutter or Dart application."></Card>
+                <Card title="Full insights into your data" description="With the Cardinal web app you can see all your user sessions and analytic data in one place."></Card>
+                <Card title="Integrated querying language" description="Create and customize your own dashboards in the web app with the Cardinal Query Language (CQL)"></Card>
+                <Card title="Secret feature" description="We are still cooking this secret Cardinal feature but it will elevate the insights into your application to the next level."></Card>
             </ul>
             <h3>How to get started?</h3>
             <p>
-                We are currently working on getting the first release of Cardinality out in Q4 of 2024.
-                If you want to stay updated, you can subscribe to our waiting list or join the Cardinality discord
+ 				To get started with using Cardinal, sign up for a Cardinal account via the <a href="https://app.cardinal.run">Dashboard</a> and create your account. 
+			</p>
+			<blockquote>
+				<b>Note</b>: Cardinal is currently in closed alpha and sign-up is invite-only.
+			</blockquote>
+			<p>
+                We are currently working on getting Cardinal publicly available as soon as possible.
+                If you want to stay updated, you can subscribe to our waiting list or join the Cardinal discord
                 where you will be able to talk to us and the community directly!
             </p>
             <div class="actions">
@@ -57,11 +64,16 @@ const discordLink = 'https://discord.gg/Abkm7Ewhen';
 	<footer>
 		<div class="content">
 			<div class="left">
-				© Cardinality • All Rights Reserved
+				© Cardinal • All Rights Reserved
 			</div>
 			<div class="right">
+				<div class="social">
+					<a href="https://bsky.app/profile/cardinal.run">
+						<Fragment set:html={socialBlueSky}></Fragment>
+					</a>
+				</div>
 				<div class="social">				
-					<a href="https://x.com/cardinality_run">
+					<a href="https://x.com/cardinal_run">
 						<Fragment set:html={socialX}></Fragment>
 					</a>
 				</div>
@@ -71,7 +83,7 @@ const discordLink = 'https://discord.gg/Abkm7Ewhen';
 					</a>
 				</div>
 				<div class="social">
-					<a href="https://www.linkedin.com/company/cardinality_run/">
+					<a href="https://www.linkedin.com/company/cardinal-run/">
 						<Fragment set:html={socialLinkedIn}></Fragment>
 					</a>
 				</div>
@@ -128,7 +140,7 @@ const discordLink = 'https://discord.gg/Abkm7Ewhen';
 		width: 1.5rem;
 		height: 1.5rem;
 		padding: 1rem;
-		margin-left: 1rem;
+		margin-left: 0.5rem;
 	}
 	.social a {
 		color: rgb(var(--foreground-content));

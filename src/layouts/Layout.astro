@@ -13,27 +13,27 @@ const {  } = Astro.props;
 		<meta charset="UTF-8" />
 		
 		<meta name="description" content="Start observing your Flutter apps" />
-		<meta property="image" content="https://cardinality.run/home.png" />
-		<title>Cardinality</title>
+		<meta property="image" content="https://cardinal.run/home.png" />
+		<title>Cardinal</title>
 
 		<!-- Open Graph Data -->
-		<meta property="og:url" content="https://cardinality.run" />
-		<meta property="og:title" content="Cardinality" />
+		<meta property="og:url" content="https://cardinal.run" />
+		<meta property="og:title" content="Cardinal" />
 		<meta name="og:description" content="Start observing your Flutter apps" />
-		<meta property="og:image" content="https://cardinality.run/home.png" />
+		<meta property="og:image" content="https://cardinal.run/home.png" />
 
   		<!-- Twitter Share Data -->
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:creator" content="@cardinality_run" />
-		<meta property="twitter:title" content="Cardinality" />
+		<meta property="twitter:creator" content="@cardinal_run" />
+		<meta property="twitter:title" content="Cardinal" />
 		<meta property="twitter:description" content="Start observing your Flutter apps" />
-		<meta property="twitter:image" content="https://cardinality.run/home.png" />
-		<meta property="twitter:site" content="@cardinality_run" />
+		<meta property="twitter:image" content="https://cardinal.run/home.png" />
+		<meta property="twitter:site" content="@cardinal_run" />
 
   		<!-- iOS meta tags & icons -->
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<meta name="apple-mobile-web-app-title" content="Cardinality">
+		<meta name="apple-mobile-web-app-title" content="Cardinal">
 		
 		<meta name="theme-color" content="#000000">
 
@@ -97,7 +97,16 @@ const {  } = Astro.props;
 		--foreground-content: 255, 255, 255;
 	}
 
-	h1, h2, h3, h4, h5, h6, p {
+	h1, h2, h3, h4, h5, h6, p, blockquote {
 		margin: 0 0 1.5rem;
+	}
+
+	a {
+		color: rgb(var(--accent)); 
+	}
+
+	blockquote {
+		border-left: rgb(var(--accent)) 0.25rem solid;
+		padding: 0.1rem 0.75rem;
 	}
 </style>
